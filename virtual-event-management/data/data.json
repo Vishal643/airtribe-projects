@@ -1,0 +1,21 @@
+{
+  "users": [
+    {
+      "name": "Clark Kent",
+      "email": "clark@superman.com",
+      "password": "$2b$10$e5eU49RHrPleaTPUmWzWYuaKlo32PPfESRjlOhZW0sncdQlB10WnC",
+      "role": "organizer"
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "date": "2024/03/10 10:00",
+      "time": "2024/03/10 12:30",
+      "duration": "2 hour",
+      "description": "This is a dummy event 2 updated",
+      "participants": [],
+      "createdBy": "clark@superman.com"
+    }
+  ]
+}
