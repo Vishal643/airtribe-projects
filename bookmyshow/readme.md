@@ -25,20 +25,24 @@
 
 - Theatre Table Creation:- 
 
-    ```CREATE TABLE Theatre (
+    ```
+    CREATE TABLE Theatre (
         TheatreID INT PRIMARY KEY,
         Name VARCHAR(255),
         Location VARCHAR(255)
-    );```
+    );
+    ```
 
 - Movie Table Creation:- 
 
-   ```CREATE TABLE Movie (
+   ```
+   CREATE TABLE Movie (
         MovieID INT PRIMARY KEY,
         Title VARCHAR(255),
         Duration INT,
         Rating Float
-    );```
+    );
+    ```
 
 - Show Table Creation:- 
 
@@ -71,26 +75,29 @@
     INSERT INTO Shows VALUES (3, 2, 1, '2024-03-27', '14:00');
 ```
 
-P1: Creation of Tables and Sample Data Insertion
+## P1: Creation of Tables and Sample Data Insertion
 Refer to the SQL Creation Scripts and Sample Data Entries sections above.
 
-P2: Query to List Shows for a Given Date at a Given Theatre
-```SELECT 
-    t.Name AS TheatreName,
-    t.Location,
-    m.Title,
-    s.ShowTime
-FROM 
-    Show s
-JOIN 
-    Movie m ON s.MovieID = m.MovieID
-JOIN 
-    Theatre t ON s.TheatreID = t.TheatreID
-WHERE 
-    s.ShowDate = '2024-03-26' 
-    AND s.TheatreID = 1
-ORDER BY 
-    s.ShowTime;```
+## P2: Query to List Shows for a Given Date at a Given Theatre
 
-Expected Output
+```
+    SELECT 
+        t.Name AS TheatreName,
+        t.Location,
+        m.Title,
+        s.ShowTime
+    FROM 
+        Show s
+    JOIN 
+        Movie m ON s.MovieID = m.MovieID
+    JOIN 
+        Theatre t ON s.TheatreID = t.TheatreID
+    WHERE 
+        s.ShowDate = '2024-03-26' 
+        AND s.TheatreID = 1
+    ORDER BY 
+        s.ShowTime;
+```
+
+## Expected Output
 The above query will output a list of movies and their show times at the specified theatre on the given date, along with the theatre's name and location. The results will be sorted by show time in ascending order.
