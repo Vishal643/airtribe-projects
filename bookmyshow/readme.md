@@ -1,5 +1,5 @@
 # BookMyShow Database Structure and Queries
-```This document outlines the database structure for a ticketing platform similar to BookMyShow, focusing on storing information about theatres, movies, and showtimes. It includes the creation of tables according to the principles of normalization (1NF, 2NF, 3NF, and BCNF), sample data for testing, and a query to retrieve showtimes for a specific date and theatre.```
+This document outlines the database structure for a ticketing platform similar to BookMyShow, focusing on storing information about theatres, movies, and showtimes. It includes the creation of tables according to the principles of normalization (1NF, 2NF, 3NF, and BCNF), sample data for testing, and a query to retrieve showtimes for a specific date and theatre.
 
 ## Database Structure Tables and Attributes
 
@@ -101,3 +101,9 @@ Refer to the SQL Creation Scripts and Sample Data Entries sections above.
 
 ## Expected Output
 The above query will output a list of movies and their show times at the specified theatre on the given date, along with the theatre's name and location. The results will be sorted by show time in ascending order.
+
+```
+Title               ShowTime	TheatreName	   Location
+The Great Escape	13:00:00	Cineplex 21	   Koramangala
+Space Odyssey	    16:00:00	Cineplex 21	   Koramangala
+```
